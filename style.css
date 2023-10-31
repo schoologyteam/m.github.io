@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://cdn.wallpapersafari.com/37/44/ZMJwF6.jpg);
+}
+
+
+/* this is main part */
+.main{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+.main>h2{
+    color: orange;
+    font-size: 4em;
+    text-align: center;
+    margin: 20px 0;
+}
+.fight-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 0;
+}
+.fight{
+    text-align: center;
+    background-color: orange;
+    font-size: 1.5em;
+    width: 160px;
+    display: none;
+    padding: 3px 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 12px;    
+    border: none;
+    margin-bottom: 3em
+}
+
+.fight:hover {
+    opacity: 0.6;
+}
+.fight:active {
+    background-color: rgb(194, 27, 27);
+}
+.about{
+    display: none;
+    font-size: 1.1em;
+    width: 240px;
+    display: none;
+    color: red;
+    position: absolute;
+    font-family: cursive;
+    left: -200px
+}
+.chooseenemy-h2, .enemy-h2{
+    display: none;
+}
+.hero{
+    width: 150px;
+    height: 250px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-color: none;
+    position: relative;
+}
+.hero:hover{
+    transform:scale(1.3);
+    .about{
+        display: block;
+    }
+}
+.heroes, .choose-enemy, .enemy{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 0 auto;
+    height: 28%;
+}
+.raiden{
+    background-image: url(https://static.wikia.nocookie.net/fcoc-vs-battles/images/6/6d/Raiden1.png/revision/latest/scale-to-width-down/504?cb=20201025155232);
+}
+.scorpion{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/4/45/Scorpiontobias.png);
+}
+.mileena{
+    background-image: url(mileena1.png);
+}
+.baraka{
+    background-image: url(Baraka_Art.webp);
+}
+.sub-zero{
+    background-image: url(sub_zero.png);
+
+}
+.kung-lao{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/75cbde8a-db1c-4fe1-869e-8bb5be9a49b6/devfw3k-33cea0c2-6f43-43f3-9f50-0f007185e7fe.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc1Y2JkZThhLWRiMWMtNGZlMS04NjllLThiYjViZTlhNDliNlwvZGV2Znczay0zM2NlYTBjMi02ZjQzLTQzZjMtOWY1MC0wZjAwNzE4NWU3ZmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GR1zEjZqPJagyuA6pepi7qsnWgJaoJU41XJLv_es4g4);
+}
+
+
+/* this is war part */
+.war{
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: none;
+    background-image: url(https://www.fightersgeneration.com/nf9/game/stage/mk3-stage-balcony2.gif);
+    background-size: 100% 100%;
+}
+.beat{
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    font-size: 2em;
+    height: 60px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+}
+.enemies{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: end;
+}
+.lifes{
+    width: 100%;
+    padding: 0 40px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.lifebar, .layout{
+    width: 300px;
+    height: 14px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.qehremandi, .dusmendi{
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    color: white;
+    font-size: 2em;
+}
+.layout{
+    background-color: rgb(35, 150, 35);
+}
+.pop-up{
+    position: absolute;
+    z-index: 4; 
+    width: 850px;
+    bottom: 70px;
+    height: 600px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.win-lost-info{
+    font-size: 4em;
+    color: white;
+    user-select: none;
+    font-weight: 600;
+}
+.start-again{
+    background-color: rgb(124, 55, 253);
+    padding: 8px;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+}
+/* .effect{
+    background-image: url(https://orangemushroom.files.wordpress.com/2021/02/abyssal-lightning-effect-underworlds-lightning.gif?w=277);
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 7;
+    width: 100px;
+    height: 500px;
+    bottom: 30px;    
+} */
+
+
+/* responsivness */
+@media only screen  and (max-width: 900px) {
+    .lifes{
+        flex-direction: column;
+    }
+    .qehremandi,    
+    .dusmendi {
+        width: 440px;
+        font-size: 1.3em;
+    }
+    .lifebar,
+    .layout {
+        width: 300px;
+    }
+    .pop-up{
+        width: 450px;
+        height: 540px;
+    }
+    .about {
+        font-size: 0.8em;
+        width: 200px;
+        left: -160px
+    }
+    .hero:hover{
+        .about {
+                left: -100px;
+            }
+    }
+    .enemies{
+        width: 90%;
+    }
+
+}

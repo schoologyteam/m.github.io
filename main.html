@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Combat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Your Choice</h2>
+        <div class="about about-qehreman">
+            <h2>Name: <span class="heroName"></span></h2>
+            <h3>Health:<span class="heroHealth"></span></h3>
+            <h3>Power:  <span class="heroPower"></span></h3>
+        </div>
+        <div class="about about-dushmen">
+            <h2>Name: <span class="enemyName"></span></h2>
+            <h3>Health:<span class="enemyHealth"></span></h3>
+            <h3>Power:  <span class="enemyPower"></span></h3>
+        </div>
+        <div class="heroes">
+            <div class="hero hero-reset raiden" data-name="Raiden" data-power="20" data-health="110"></div>
+            <div class="hero hero-reset scorpion" data-name="Scorpion" data-power="25" data-health="120"></div>
+            <div class="hero hero-reset mileena" data-ad="Mileena" data-name="Mileena" data-power="30" data-health="130"></div>
+            <div class="hero hero-reset baraka" data-ad="Baraka" data-name="Baraka" data-power="30" data-health="100"></div>
+            <div class="hero hero-reset sub-zero" data-name="Sub-zero" data-power="25" data-health="120"></div>
+            <div class="hero kung-lao" data-name="Kung-lao" data-power="30" data-health="105"></div>
+        </div>
+        <h2 class="chooseenemy-h2">Choose enemy</h2>
+        <div class="choose-enemy"></div>
+        <h2 class="enemy-h2">Enemy</h2>
+        <div class="enemy"></div>
+        <div class="fight-button">
+            <button class="fight">Fight</button>
+        </div>
+    </div>
+    <div class="war">
+        <div class="lifes">
+            <div class="qehremandi"> 
+                <h3 class="qehName"></h3>
+            <div class="lifebar herolife">
+                <div class="layout herolayout"></div>
+            </div>
+            </div>
+            <div class="dusmendi">
+                <h3 class="dusName"></h3>
+            <div class="lifebar enemylife">
+                <div class="layout enemylayout"></div>
+            </div>
+            </div>
+        </div>
+        
+        <button class="beat">Beat!</button>
+        <div class="pop-up">
+            <h3 class="win-lost-info"></h3>
+            <button class="start-again">Start Again</button>
+        </div>
+        <div class="enemies"></div>
+    </div>
+
+
+
+    <script src="new.js"></script>
+</body>
+
+</html>
